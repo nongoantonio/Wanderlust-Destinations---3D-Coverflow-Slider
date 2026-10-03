@@ -1,4 +1,3 @@
-// Inicialização do Swiper.js com Coverflow 3D Avançado e Setas
 const swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -29,9 +28,7 @@ const swiper = new Swiper(".swiper", {
     }
 });
 
-// Sistema de Filtro por Categoria
 function filterCategory(category) {
-    // Atualizar botões ativos
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
 
@@ -41,14 +38,12 @@ function filterCategory(category) {
         if (category === 'all' || slide.getAttribute('data-category') === category) {
             slide.style.display = 'flex';
         } else {
-            // Mantém visível mas com opacidade ou remove do loop visual temporariamente
             slide.style.display = 'flex'; 
         }
     });
     swiper.update();
 }
 
-// Funções para controle do Modal Luxuoso
 const modal = document.getElementById("destinationModal");
 const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
@@ -76,7 +71,6 @@ function handleBooking() {
     closeModal();
 }
 
-// Fechar modal ao clicar fora da caixa
 window.onclick = function(event) {
     if (event.target == modal) {
         closeModal();

@@ -4,30 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust | Luxury Global Destinations</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z'/></svg>">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Profissional com Menu e Estatísticas -->
     <header class="header">
         <div class="logo">
             <div class="logo-badge">W</div>
             <span>Wanderlust<span class="dot">.</span></span>
         </div>
         
-        <div class="header-stats">
-            <div class="stat-pill">
-                <span class="dot-green"></span> <strong>+48.5k</strong> Viajantes Ativos
-            </div>
-        </div>
-
         <nav class="nav-links">
             <a href="#" class="active">Explorar</a>
             <a href="#">Experiências</a>
@@ -36,18 +25,15 @@
         </nav>
     </header>
 
-    <!-- Main Hero Section -->
     <main class="hero-section">
         <div class="ambient-glow glow-1"></div>
         <div class="ambient-glow glow-2"></div>
         <div class="ambient-glow glow-3"></div>
 
         <div class="hero-header">
-            <span class="subtitle-badge">✨ Experiências de Viagem de Elite</span>
             <h1>Descubra Experiências Inesquecíveis</h1>
             <p>Navegue pelos destinos mais exclusivos do planeta com nosso carrossel imersivo de alta performance.</p>
             
-            <!-- Barra de Filtros Rápidos -->
             <div class="filter-bar">
                 <button class="filter-btn active" onclick="filterCategory('all')">Todos</button>
                 <button class="filter-btn" onclick="filterCategory('domestic')">Doméstico</button>
@@ -59,7 +45,6 @@
         </div>
 
         <div class="carousel-container">
-            <!-- Setas de Navegação Personalizadas -->
             <button class="carousel-nav-btn prev-btn" aria-label="Anterior">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
             </button>
@@ -67,11 +52,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
             </button>
 
-            <!-- Swiper Carrossel -->
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    
-                    <!-- Slide 1 -->
                     <div class="swiper-slide swiper-slide--one" data-category="domestic">
                         <div class="slide-badge domestic">Doméstico</div>
                         <div class="slide-content">
@@ -90,7 +72,6 @@
                         </div>
                     </div>
 
-                    <!-- Slide 2 -->
                     <div class="swiper-slide swiper-slide--two" data-category="subtropical">
                         <div class="slide-badge subtropical">Subtropical</div>
                         <div class="slide-content">
@@ -109,7 +90,6 @@
                         </div>
                     </div>
 
-                    <!-- Slide 3 -->
                     <div class="swiper-slide swiper-slide--three" data-category="history">
                         <div class="slide-badge history">História</div>
                         <div class="slide-content">
@@ -128,7 +108,6 @@
                         </div>
                     </div>
 
-                    <!-- Slide 4 -->
                     <div class="swiper-slide swiper-slide--four" data-category="mayans">
                         <div class="slide-badge mayans">Maias</div>
                         <div class="slide-content">
@@ -147,7 +126,6 @@
                         </div>
                     </div>
 
-                    <!-- Slide 5 -->
                     <div class="swiper-slide swiper-slide--five" data-category="native">
                         <div class="slide-badge native">Nativo</div>
                         <div class="slide-content">
@@ -165,16 +143,13 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <!-- Paginação do Swiper -->
             <div class="swiper-pagination"></div>
         </div>
     </main>
 
-    <!-- Modal Luxuoso -->
     <div id="destinationModal" class="modal-overlay">
         <div class="modal-card">
             <button class="modal-close" onclick="closeModal()">&times;</button>
@@ -196,9 +171,7 @@
         </div>
     </div>
 
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="main.js"></script>
 </body>
 </html>
