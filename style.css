@@ -24,14 +24,14 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Profissional */
+/* Header Minimalista e Profissional */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 60px;
     background: rgba(6, 9, 19, 0.8);
@@ -41,53 +41,27 @@ body {
 }
 
 .logo {
-    font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: -0.5px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    color: #fff;
 }
 
-.logo-icon {
-    font-size: 1.1rem;
-}
-
-.dot {
-    color: var(--accent-color);
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover, .nav-links a.active {
-    color: var(--text-primary);
-}
-
-.cta-nav {
+.logo-mark {
+    width: 36px;
+    height: 36px;
     background: linear-gradient(135deg, #6366f1, #4f46e5);
-    color: #fff !important;
-    padding: 10px 22px;
-    border-radius: 50px;
-    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1.1rem;
     box-shadow: 0 4px 15px var(--accent-glow);
-    transition: transform 0.2s, box-shadow 0.2s !important;
-}
-
-.cta-nav:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
 }
 
 /* Hero Section */
@@ -130,30 +104,16 @@ body {
 .hero-header {
     text-align: center;
     max-width: 700px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     z-index: 2;
 }
 
-.subtitle-badge {
-    display: inline-block;
-    padding: 6px 16px;
-    background: rgba(99, 102, 241, 0.1);
-    color: #818cf8;
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-}
-
 .hero-header h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -486,10 +446,9 @@ body {
 
 .modal-cta:hover { transform: translateY(-2px); }
 
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
     .header { padding: 15px 20px; }
-    .nav-links { display: none; }
     .hero-header h1 { font-size: 2.2rem; }
-    .carousel-nav-btn { display: none; } /* Em mobile o toque e arraste funcionam perfeitamente */
+    .carousel-nav-btn { display: none; }
 }

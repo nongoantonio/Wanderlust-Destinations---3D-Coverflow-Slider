@@ -1,6 +1,6 @@
 # 🌍 Wanderlust Destinations - 3D Coverflow Experience
 
-> Um projeto web moderno, elegante e altamente imersivo desenvolvido para explorar destinos turísticos de alto padrão através de uma interface inspirada em design de agências de viagens de luxo.
+> Um projeto web moderno, elegante e altamente imersivo desenvolvido para explorar destinos turísticos de alto padrão através de uma interface limpa e intuitiva.
 
 ---
 
