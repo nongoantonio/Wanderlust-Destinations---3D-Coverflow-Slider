@@ -2,7 +2,9 @@
 
 > Uma aplicação web de alto nível, projetada com foco em UI/UX moderna (estilo agência de viagens de luxo), oferecendo uma experiência imersiva através de um carrossel 3D interativo e responsivo.
 
----
+
+🔗 **[Ver projeto online](https://nongoantonio.github.io/Wanderlust-Destinations---3D-Coverflow-Slider/)**
+
 
 ## ✨ Destaques & Funcionalidades
 
