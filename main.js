@@ -1,4 +1,4 @@
-// Inicialização do Swiper.js com Coverflow 3D Avançado
+// Inicialização do Swiper.js com Coverflow 3D Avançado e Conexão às Setas
 const swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -7,7 +7,7 @@ const swiper = new Swiper(".swiper", {
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
-        depth: 120,
+        depth: 130,
         modifier: 2.5,
         slideShadows: false
     },
@@ -22,10 +22,14 @@ const swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true
+    },
+    navigation: {
+        nextEl: ".next-btn",
+        prevEl: ".prev-btn"
     }
 });
 
-// Funções para controle do Modal Interativo
+// Funções para controle do Modal Profissional
 const modal = document.getElementById("destinationModal");
 const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
@@ -38,13 +42,15 @@ function openModal(title, desc, price, imgUrl) {
     modalPrice.innerText = price;
     modalImg.src = imgUrl;
     modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
     modal.style.display = "none";
+    document.body.style.overflow = "auto";
 }
 
-// Fechar modal ao clicar fora da caixa de conteúdo
+// Fechar modal ao clicar fora da caixa do cartão
 window.onclick = function(event) {
     if (event.target == modal) {
         closeModal();

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinos Paradisíacos - Exploração Global</title>
+    <title>Wanderlust | Explore o Mundo com Estilo</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <!-- Custom CSS -->
@@ -13,107 +13,148 @@
 </head>
 <body>
 
-    <!-- Cabeçalho Futurista / Moderno -->
+    <!-- Header Profissional -->
     <header class="header">
-        <div class="logo">🌍 Wanderlust <span>Destinations</span></div>
-        <nav class="nav">
-            <a href="#" class="active">Explorar</a>
+        <div class="logo">
+            <span class="logo-icon">✨</span> Wanderlust<span class="dot">.</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Destinos</a>
             <a href="#">Experiências</a>
-            <a href="#">Favoritos</a>
+            <a href="#">Sobre</a>
+            <a href="#" class="cta-nav">Contato</a>
         </nav>
     </header>
 
-    <!-- Seção Principal com Carrossel 3D -->
-    <section class="hero-section">
-        <div class="hero-bg-glow"></div>
-        <div class="section-title">
-            <h1>Descubra o Mundo</h1>
-            <p>Navegue pelos destinos mais impressionantes do planeta</p>
+    <!-- Main Hero Section -->
+    <main class="hero-section">
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+
+        <div class="hero-header">
+            <span class="subtitle-badge">🚀 Próxima Geração de Viagens</span>
+            <h1>Descubra Experiências Inesquecíveis</h1>
+            <p>Navegue pelos destinos mais exclusivos do planeta com nosso carrossel imersivo de alta performance.</p>
         </div>
 
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide swiper-slide--one" data-description="Desfrute das exóticas e ensolaradas praias do Havaí, com trilhas vulcânicas e pores do sol inesquecíveis." data-price="$1,200">
-                    <span class="badge domestic">Doméstico</span>
-                    <div class="slide-content">
-                        <h2>Enjoy the exotic of sunny Hawaii</h2>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Maui, Hawaii
-                        </p>
-                        <button class="explore-btn" onclick="openModal('Maui, Hawaii', 'Desfrute das exóticas e ensolaradas praias do Havaí, com trilhas vulcânicas e pores do sol inesquecíveis.', '$1,200', 'https://images.unsplash.com/photo-1556206079-747a7a424d3d?auto=format&fit=crop&w=871&q=80')">Explorar Destino</button>
-                    </div>
-                </div>
+        <div class="carousel-container">
+            <!-- Setas de Navegação Personalizadas -->
+            <button class="carousel-nav-btn prev-btn" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+            </button>
+            <button class="carousel-nav-btn next-btn" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+            </button>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide swiper-slide--two" data-description="A Ilha da Eternas Primaveras oferece paisagens vulcânicas dramáticas, clima perfeito e praias de areias douradas." data-price="$950">
-                    <span class="badge subtropical">Subtropical</span>
-                    <div class="slide-content">
-                        <h2>The Island of Eternal Spring</h2>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Lanzarote, Espanha
-                        </p>
-                        <button class="explore-btn" onclick="openModal('Lanzarote, Espanha', 'A Ilha da Eternas Primaveras oferece paisagens vulcânicas dramáticas, clima perfeito e praias de areias douradas.', '$950', 'https://images.unsplash.com/photo-1571900670723-a317a66e3fb7?auto=format&fit=crop&w=423&q=80')">Explorar Destino</button>
+            <!-- Swiper Carrossel -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide swiper-slide--one">
+                        <div class="slide-badge domestic">Doméstico</div>
+                        <div class="slide-content">
+                            <div class="location-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Maui, Hawaii
+                            </div>
+                            <h2>Enjoy the exotic of sunny Hawaii</h2>
+                            <div class="slide-footer">
+                                <span class="price-tag">A partir de <strong>$1,200</strong></span>
+                                <button class="explore-action" onclick="openModal('Maui, Hawaii', 'Desfrute das exóticas e ensolaradas praias do Havaí, com trilhas vulcânicas e pores do sol inesquecíveis.', '$1,200', 'https://images.unsplash.com/photo-1556206079-747a7a424d3d?auto=format&fit=crop&w=871&q=80')">Explorar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide swiper-slide--three" data-description="Sinta a magia de Paris visitando a imponente Torre Eiffel, museus mundialmente famosos e bistrôs charmosos." data-price="$1,450">
-                    <span class="badge history">História</span>
-                    <div class="slide-content">
-                        <h2>Awesome Eiffel Tower</h2>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Paris, França
-                        </p>
-                        <button class="explore-btn" onclick="openModal('Paris, França', 'Sinta a magia de Paris visitando a imponente Torre Eiffel, museus mundialmente famosos e bistrôs charmosos.', '$1,450', 'https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=387&q=80')">Explorar Destino</button>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide swiper-slide--two">
+                        <div class="slide-badge subtropical">Subtropical</div>
+                        <div class="slide-content">
+                            <div class="location-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Lanzarote, Espanha
+                            </div>
+                            <h2>The Island of Eternal Spring</h2>
+                            <div class="slide-footer">
+                                <span class="price-tag">A partir de <strong>$950</strong></span>
+                                <button class="explore-action" onclick="openModal('Lanzarote, Espanha', 'A Ilha da Eternas Primaveras oferece paisagens vulcânicas dramáticas, clima perfeito e praias de areias douradas.', '$950', 'https://images.unsplash.com/photo-1571900670723-a317a66e3fb7?auto=format&fit=crop&w=423&q=80')">Explorar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Slide 4 -->
-                <div class="swiper-slide swiper-slide--four" data-description="Explore ruínas ancestrais maias, cenotes cristalinos e uma rica cultura em um dos estados mais seguros do México." data-price="$800">
-                    <span class="badge mayans">Maias</span>
-                    <div class="slide-content">
-                        <h2>One of the safest states in Mexico</h2>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            The Yucatan, México
-                        </p>
-                        <button class="explore-btn" onclick="openModal('The Yucatan, México', 'Explore ruínas ancestrais maias, cenotes cristalinos e uma rica cultura em um dos estados mais seguros do México.', '$800', 'https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?auto=format&fit=crop&w=870&q=80')">Explorar Destino</button>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide swiper-slide--three">
+                        <div class="slide-badge history">História</div>
+                        <div class="slide-content">
+                            <div class="location-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Paris, França
+                            </div>
+                            <h2>Awesome Eiffel Tower</h2>
+                            <div class="slide-footer">
+                                <span class="price-tag">A partir de <strong>$1,450</strong></span>
+                                <button class="explore-action" onclick="openModal('Paris, França', 'Sinta a magia de Paris visitando a imponente Torre Eiffel, museus mundialmente famosos e bistrôs charmosos.', '$1,450', 'https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=387&q=80')">Explorar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Slide 5 -->
-                <div class="swiper-slide swiper-slide--five" data-description="Águas cristalinas de tirar o fôlego e areias brancas na Whitehaven Beach. O destino de iatismo mais popular do mundo." data-price="$2,100">
-                    <span class="badge native">Nativo</span>
-                    <div class="slide-content">
-                        <h2>The most popular yachting destination</h2>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Whitsunday Islands, Austrália
-                        </p>
-                        <button class="explore-btn" onclick="openModal('Whitsunday Islands, Austrália', 'Águas cristalinas de tirar o fôlego e areias brancas na Whitehaven Beach. O destino de iatismo mais popular do mundo.', '$2,100', 'https://images.unsplash.com/photo-1596521864207-13d46b1a0c78?auto=format&fit=crop&w=774&q=80')">Explorar Destino</button>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide swiper-slide--four">
+                        <div class="slide-badge mayans">Maias</div>
+                        <div class="slide-content">
+                            <div class="location-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                The Yucatan, México
+                            </div>
+                            <h2>One of the safest states in Mexico</h2>
+                            <div class="slide-footer">
+                                <span class="price-tag">A partir de <strong>$800</strong></span>
+                                <button class="explore-action" onclick="openModal('The Yucatan, México', 'Explore ruínas ancestrais maias, cenotes cristalinos e uma rica cultura em um dos estados mais seguros do México.', '$800', 'https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?auto=format&fit=crop&w=870&q=80')">Explorar</button>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide swiper-slide--five">
+                        <div class="slide-badge native">Nativo</div>
+                        <div class="slide-content">
+                            <div class="location-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Whitsunday Islands, Austrália
+                            </div>
+                            <h2>The most popular yachting destination</h2>
+                            <div class="slide-footer">
+                                <span class="price-tag">A partir de <strong>$2,100</strong></span>
+                                <button class="explore-action" onclick="openModal('Whitsunday Islands, Austrália', 'Águas cristalinas de tirar o fôlego e areias brancas na Whitehaven Beach. O destino de iatismo mais popular do mundo.', '$2,100', 'https://images.unsplash.com/photo-1596521864207-13d46b1a0c78?auto=format&fit=crop&w=774&q=80')">Explorar</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Paginação e Navegação -->
+            <!-- Paginação do Swiper -->
             <div class="swiper-pagination"></div>
         </div>
-    </section>
+    </main>
 
-    <!-- Modal de Detalhes -->
-    <div id="destinationModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <img id="modalImg" src="" alt="Destino">
-            <h2 id="modalTitle"></h2>
-            <p id="modalDesc"></p>
-            <div class="modal-footer">
-                <span id="modalPrice" class="price"></span>
-                <button class="book-now" onclick="alert('Reserva efetuada com sucesso!')">Reservar Agora</button>
+    <!-- Modal Premium -->
+    <div id="destinationModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-img-container">
+                <img id="modalImg" src="" alt="Destino">
+            </div>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+                <div class="modal-meta">
+                    <div class="modal-price-box">
+                        <span>Investimento</span>
+                        <strong id="modalPrice"></strong>
+                    </div>
+                    <button class="modal-cta" onclick="alert('Reserva iniciada com sucesso! Entraremos em contato.')">Reservar Viagem</button>
+                </div>
             </div>
         </div>
     </div>
